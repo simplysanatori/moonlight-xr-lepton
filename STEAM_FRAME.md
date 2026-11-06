@@ -6,7 +6,7 @@ Tested on a Steam Frame with SteamOS and Lepton 2.8.x, streaming from Sunshine o
 
 ## Native client
 
-There is now a native Steam Frame client: **Moonlight XR for Frame**, at <https://github.com/simplysanatori/moonlight-xr-native>. It runs on the Frame directly, without Lepton. The repository will be public soon; until then the link returns a 404. The upstream pull request for this fork was closed for that reason. This fork stays published for people who already use it.
+**This Lepton build is legacy and no longer actively developed.** The native Steam Frame client, **Moonlight XR for Frame**, is at <https://github.com/simplysanatori/moonlight-xr-steam-frame>. It runs on the Frame directly, without Lepton, so it avoids this build's limits: it has hardware H.264/HEVC decoding, 4K at 120 Hz, much higher bitrates, accessibility features and full Apollo support. This fork stays published for people who already use it.
 
 ## Status
 
@@ -18,7 +18,7 @@ Confirmed on a Steam Frame, in the headset:
 - Resizing the picture by its corners.
 - The pointer, the bar below the screen and its panels.
 - The Steam Frame controllers in gamepad mode, mapped to an Xbox layout (see Controls), and the "Flip face buttons" setting.
-- Passthrough, from [sune-ku's change](https://github.com/simplysanatori/moonlight-android-xr-steam-frame/pull/1). It is in the branch after v0.3. The v0.3 APK does not have it. Build from the branch, or use a later release if there is one.
+- Passthrough, from [sune-ku's change](https://github.com/simplysanatori/moonlight-xr-lepton/pull/1). It is in the branch after v0.3. The v0.3 APK does not have it. Build from the branch, or use a later release if there is one.
 
 Not tested: hand tracking, look to point, HDR.
 
@@ -32,12 +32,12 @@ Not tested: hand tracking, look to point, HDR.
 
 ## Install
 
-1. Download `MoonlightXR-steam-frame-<version>.apk` from the [Releases page](https://github.com/simplysanatori/moonlight-android-xr-steam-frame/releases), or build it (see Building).
+1. Download `MoonlightXR-steam-frame-<version>.apk` from the [Releases page](https://github.com/simplysanatori/moonlight-xr-lepton/releases), or build it (see Building).
 2. On the Frame, in a terminal:
 
    ```sh
-   git clone https://github.com/simplysanatori/moonlight-android-xr-steam-frame.git
-   cd moonlight-android-xr-steam-frame
+   git clone https://github.com/simplysanatori/moonlight-xr-lepton.git
+   cd moonlight-xr-lepton
    steam-frame/install.sh ~/Downloads/MoonlightXR-steam-frame-<version>.apk
    ```
 
